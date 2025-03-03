@@ -12,7 +12,7 @@ In batch learning, it is commonly assumed that samples are independent and ident
 
 To address these challenges, we have developed Tenet, a novel benchmarking framework designed to evaluate data stream classifiers in non-i.i.d. scenarios. Tenet consists of a data stream generator and a baseline model, where the generator introduces temporal dependencies into commonly used data streams for SML evaluation. The framework has demonstrated effectiveness in modeling dependencies and causal structures across various streaming scenarios. However, its current implementation primarily focuses on deterministic temporal dependencies. Indeed, the current version of the temporal injection follows the formula:
 
-$y_t^{*} = mode (y, y_{t-1}, y_{t-2})$
+$y_t^{*} = mode (y_t, y_{t-1}, y_{t-2})$
 
 Further details on the existing framework and its implementation can be found in the corresponding paper available in the repository. 
 
